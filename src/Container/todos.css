@@ -1,0 +1,144 @@
+.todoContainer h3{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    margin: 0;
+}
+.todos li {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    list-style: none;
+    background: #fafafa;
+    padding: 10px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    border-radius: 5px;
+    margin-top: 20px;
+    border-bottom: 2px solid #242b2e;
+}
+.todos li > div {
+    display: flex;
+    align-items: center;
+}
+.delete_todo {
+    background: #fa4040;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 2px solid transparent;
+}
+.delete_todo:hover {
+    border: 2px dashed black;
+}
+.form_add {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.form_add input {
+    width: 70%;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 18px;
+    font-family: monospace;
+    outline: none;
+}
+.form_add button {
+    background: #242b2e;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: monospace;
+    border-radius: 5px;
+    border: 0;
+    margin-left: 5px;
+    width: 100px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.form_add button:hover {
+    background: #104a63;
+}
+.modal {
+    transition: all 0.3s;
+    z-index: 9999;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block {
+    width: 450px;
+    height: 300px;
+    background: white;
+    box-shadow: 0 4px 20px 0 rgba(36, 83, 143, 0.15);
+    border-radius: 5px;
+}
+.block input {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 60px;
+    height: 40px;
+    border-bottom: 2px solid #242b2e;
+    border-top: 0;
+    border-left: 0;
+    outline: none;
+    padding-left: 5px;
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: bold;
+    background: #fafafa;
+    border-right: 0;
+}
+.block button {
+    height: 50px;
+    background: #242b2e;
+    color: white;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 0;
+    width: 100px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.block button:first-child {
+    width: 200px;
+}
+.block div {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+.edit_todo {
+    width: 150px;
+    height: 50px;
+    margin-right: 10px;
+    background: #104a63;
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.edit_todo:hover {
+    background: #242b2e;
+}
